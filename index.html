@@ -188,6 +188,10 @@ footer { padding-block: 2rem 2.5rem; color: var(--ink-soft); font-size: var(--st
   .btn:hover, .card:hover { transform: none; }
 }
 </style>
+<!-- Warm the cache with the shared KaTeX stylesheet and its commonest fonts, used by every library docs site. -->
+<link rel="prefetch" href="/assets/katex/0.19.1/katex.min.css" as="style">
+<link rel="prefetch" href="/assets/katex/0.19.1/fonts/KaTeX_Main-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="prefetch" href="/assets/katex/0.19.1/fonts/KaTeX_Math-Italic.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 <body>
 

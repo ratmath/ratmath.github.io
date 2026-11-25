@@ -206,6 +206,7 @@ footer { padding-block: 2rem 2.5rem; color: var(--ink-soft); font-size: var(--st
       <nav class="topnav" aria-label="Sections">
         <a href="#idea">The idea</a>
         <a href="#directory">Apps &amp; tools</a>
+        <a href="/shelf/">Shelf</a>
         <a href="#sites">Where things live</a>
         <a href="#engage">Get involved</a>
         <a href="https://github.com/ratmath">GitHub</a>
@@ -357,30 +358,20 @@ decision ?: "yes" ?_ "no" ?? "needs refinement";</pre>
             <p>Use the engine in your own programs.</p>
           </div>
           <div class="cards">
+            <a class="card" href="https://ratmath.com/core/">
+              <div class="card-top"><h4>RatMath Core</h4><span class="go" aria-hidden="true">→</span></div>
+              <p>The foundation: exact integers, fractions, rational intervals and certified approximations for JavaScript. BigInt-based, with no dependencies.</p>
+              <span class="where">ratmath.com/core</span>
+            </a>
+            <a class="card" href="/shelf/">
+              <div class="card-top"><h4>RatMath Shelf</h4><span class="go" aria-hidden="true">→</span></div>
+              <p>Subject libraries built on Core, each with exact or certified answers: calculus, algebraic numbers, linear algebra and graphics today, with more planned.</p>
+              <span class="where">ratmath.com/shelf</span>
+            </a>
             <a class="card" href="https://github.com/ratmath/rix">
               <div class="card-top"><h4>RiX language &amp; CLI</h4><span class="go" aria-hidden="true">→</span></div>
               <p>Run <code>npm install -g @ratmath/rix</code> for a terminal calculator and script runner, or embed the parser and evaluator in JavaScript.</p>
               <span class="where">@ratmath/rix</span>
-            </a>
-            <a class="card" href="https://ratmath.com/core/">
-              <div class="card-top"><h4>RatMath Core</h4><span class="go" aria-hidden="true">→</span></div>
-              <p>Exact integers, fractions, rational intervals and certified approximations for JavaScript. BigInt-based, with no dependencies.</p>
-              <span class="where">ratmath.com/core</span>
-            </a>
-            <a class="card" href="https://ratmath.com/analytic/">
-              <div class="card-top"><h4>Analytic</h4><span class="go" aria-hidden="true">→</span></div>
-              <p>Taylor models with exact rational coefficients and certified remainders: exp, sin, log and friends, with error bounds you can trust.</p>
-              <span class="where">ratmath.com/analytic</span>
-            </a>
-            <a class="card" href="https://github.com/ratmath/linalg">
-              <div class="card-top"><h4>Linear algebra</h4><span class="go" aria-hidden="true">→</span></div>
-              <p>Exact rational linear algebra, with fast previews that sharpen to exact results. Early days.</p>
-              <span class="where">github.com/ratmath/linalg</span>
-            </a>
-            <a class="card" href="https://github.com/ratmath/algebraic">
-              <div class="card-top"><h4>Algebraic numbers</h4><span class="go" aria-hidden="true">→</span></div>
-              <p>Exact algebraic numbers, polynomials and fields. Early days.</p>
-              <span class="where">github.com/ratmath/algebraic</span>
             </a>
           </div>
         </div>
@@ -417,7 +408,8 @@ decision ?: "yes" ?_ "no" ?? "needs refinement";</pre>
         <div><dt><a href="https://calc.ratmath.com/">calc.ratmath.com</a></dt><dd>RatCalc on the web, plus RatTree and the RatMath showcase.</dd></div>
         <div><dt><a href="https://worlds.ratmath.com/">worlds.ratmath.com</a></dt><dd>RatMath Worlds: explorable 2D and 3D mathematical spaces.</dd></div>
         <div><dt><a href="https://ratmath.com/core/">ratmath.com/core</a></dt><dd>RatMath Core documentation: the exact-arithmetic JavaScript library.</dd></div>
-        <div><dt><a href="https://ratmath.com/analytic/">ratmath.com/analytic</a></dt><dd>Analytic documentation: certified Taylor models built on Core.</dd></div>
+        <div><dt><a href="https://ratmath.com/shelf/">ratmath.com/shelf</a></dt><dd>The RatMath Shelf: every subject library built on Core, what each can do, and what is planned.</dd></div>
+        <div><dt><a href="https://ratmath.com/analytic/">ratmath.com/analytic</a></dt><dd>Documentation for each Shelf library lives at its own name: analytic, algebraic, linalg, graphics.</dd></div>
         <div><dt><a href="https://ratmath.com/RatMathCore.jl/">ratmath.com/RatMathCore.jl</a></dt><dd>The Julia port of Core and its documentation.</dd></div>
         <div><dt><a href="https://github.com/ratmath">github.com/ratmath</a></dt><dd>All source code, issues and releases.</dd></div>
         <div><dt><a href="https://www.npmjs.com/org/ratmath">npm @ratmath</a></dt><dd>Installable packages: <code>@ratmath/core</code>, <code>@ratmath/rix</code> and more.</dd></div>
@@ -443,7 +435,7 @@ decision ?: "yes" ?_ "no" ?? "needs refinement";</pre>
         </li>
         <li>
           <span class="who">Developers</span>
-          <p>Add exact arithmetic to an app with <a href="https://ratmath.com/core/">RatMath Core</a>, or embed the full <a href="https://github.com/ratmath/rix">RiX</a> evaluator and its plugins.</p>
+          <p>Add exact arithmetic to an app with <a href="https://ratmath.com/core/">RatMath Core</a>, take a subject library from the <a href="/shelf/">RatMath Shelf</a>, or embed the full <a href="https://github.com/ratmath/rix">RiX</a> evaluator and its plugins.</p>
         </li>
         <li>
           <span class="who">Researchers</span>

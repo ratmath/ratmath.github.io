@@ -21,3 +21,17 @@ Never change files in a published version folder: browsers cache them. To
 upgrade, add a new version folder, point the docs builds at it, and keep the
 old folder until no page uses it. The landing page prefetches the stylesheet
 and two fonts so the docs open with them cached.
+
+## The RatMath Shelf page
+
+`shelf/index.html` (ratmath.com/shelf) lists the subject libraries built on
+Core. "On the shelf" has one `<article class="pkg">` per library and one
+`<li>` per topic, each linking to that topic's documentation page. "Planned"
+mirrors the roadmap in `ratmath/ratmath` (`docs/design/library-roadmap.md`).
+
+When a planned topic is built and its documentation page exists, move it: add
+its `<li>` with the link under "On the shelf" (adding the library's article if
+it is the library's first topic), and remove it from "Planned" here and from
+the roadmap. A topic is never listed as available before its page is live.
+The page carries its own copy of the landing page's styles; there is still no
+build step.

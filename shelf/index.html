@@ -307,7 +307,8 @@ R`<span class="n">1.2[3:6]</span>`         <span class="c">// 1.23 to 1.26</span
             <li><a href="https://ratmath.com/analytic/multipliers.html">Change of variables, potentials, multipliers</a><span>The Jacobian shown, gradients recognised, candidates certified.</span></li>
             <li><a href="https://ratmath.com/analytic/methods.html">First-order equations: the methods</a><span>Linear, separable, exact, Bernoulli and homogeneous, each step shown and the answer checked.</span></li>
             <li><a href="https://ratmath.com/analytic/linearodes.html">Linear equations and Laplace transforms</a><span>Characteristic roots, undetermined coefficients, variation of parameters, transforms.</span></li>
-            <li><a href="https://ratmath.com/analytic/systems.html">Systems in the plane</a><span>Exact matrix exponentials; every equilibrium proven and classified.</span></li>
+            <li><a href="https://ratmath.com/analytic/switches.html">Steps and impulses</a><span>Switched and impulsive forcing by Laplace transforms, checked piece by piece.</span></li>
+            <li><a href="https://ratmath.com/analytic/systems.html">Linear and planar systems</a><span>Exact matrix exponentials of any size; every equilibrium in the plane proven and classified.</span></li>
             <li><a href="https://ratmath.com/analytic/seriessolutions.html">Series solutions</a><span>Ordinary and regular singular points; Sturm–Liouville eigenvalues bracketed.</span></li>
             <li><a href="https://ratmath.com/analytic/pdes.html">Heat, waves and potentials</a><span>Separation of variables with a proven bound on the tail.</span></li>
             <li><a href="https://ratmath.com/analytic/curves.html">Curves</a><span>Length, curvature, torsion and the Frenet frame.</span></li>
@@ -339,7 +340,6 @@ R`<span class="n">1.2[3:6]</span>`         <span class="c">// 1.23 to 1.26</span
             <li><a href="https://ratmath.com/algebraic/galois.html">Galois groups</a><span>Groups to degree 7 and the Galois correspondence.</span></li>
             <li><a href="https://ratmath.com/algebraic/angles.html">Angles and roots of unity</a><span>Exact sines and cosines of rational angles.</span></li>
             <li><a href="https://ratmath.com/algebraic/polynomials.html">Polynomial toolkit</a><span>Resultants, discriminants, partial fractions.</span></li>
-            <li><a href="https://ratmath.com/algebraic/continued-fractions.html">Continued fractions</a><span>Periodic expansions, Pell equations, units.</span></li>
             <li><a href="https://ratmath.com/algebraic/recognize.html">Recognising numbers</a><span>From digits back to an exact form.</span></li>
           </ul>
         </article>
@@ -364,6 +364,7 @@ R`<span class="n">1.2[3:6]</span>`         <span class="c">// 1.23 to 1.26</span
             <li><a href="https://ratmath.com/linalg/integer.html">Integer matrices</a><span>Hermite and Smith normal forms.</span></li>
             <li><a href="https://ratmath.com/linalg/fields.html">Other number systems</a><span>Integers mod p, ranges, algebraic numbers.</span></li>
             <li><a href="https://ratmath.com/linalg/nonlinear.html">Nonlinear solving</a><span>Certified solutions of nonlinear systems.</span></li>
+            <li><a href="https://ratmath.com/linalg/iterative.html">Iterative and eigenvalue methods</a><span>Jacobi to QR in floats and exactly, each with its exact error.</span></li>
             <li><a href="https://ratmath.com/linalg/fast-exact.html">Fast, then exact</a><span>A float preview first, the exact answer after.</span></li>
             <li><a href="https://ratmath.com/linalg/workbench.html">Exact workbench</a><span>Try matrices in the browser.</span></li>
           </ul>
@@ -448,7 +449,7 @@ R`<span class="n">1.2[3:6]</span>`         <span class="c">// 1.23 to 1.26</span
           <div>
             <h3>Discrete mathematics<span class="status status-done">First parts available</span></h3>
             <span class="id">@ratmath/discrete</span>
-            <p class="about">Combinatorics, graphs and games. Built so far: exact counting, families of objects you can list, rank and unrank, and a seeded random generator. Generating functions, graphs and games are <a href="#discrete-planned">planned</a>.</p>
+            <p class="about">Combinatorics, graphs and games. Built so far: exact counting, families of objects you can list, rank and unrank, a seeded random generator, graphs with exact weights (connectivity, shortest paths, tours and trees), exact linear programming with matrix and bimatrix games, generating functions and recurrences with exact closed forms, matchings and flows, colouring, planarity, isomorphism and spectra, combinatorial and cooperative games and voting, relations, orders and Pólya counting, and error-correcting codes and designs, each answer with its certificate. Graph drawing is <a href="#discrete-planned">planned</a>.</p>
             <p class="links"><a href="https://ratmath.com/discrete/">Overview</a> <a href="https://ratmath.com/discrete/explore.html">Explore</a> <a href="https://ratmath.com/discrete/reference.html">Reference</a> <a href="https://github.com/ratmath/discrete">Source</a></p>
           </div>
           <ul class="topics">
@@ -456,13 +457,55 @@ R`<span class="n">1.2[3:6]</span>`         <span class="c">// 1.23 to 1.26</span
             <li><a href="https://ratmath.com/discrete/inclusion-exclusion.html">Inclusion and exclusion</a><span>The sieve formula with its terms shown, and the pigeonhole principle.</span></li>
             <li><a href="https://ratmath.com/discrete/enumeration.html">Enumeration and ranking</a><span>Permutations, subsets, partitions and more: the object at any position, and the position of any object.</span></li>
             <li><a href="https://ratmath.com/discrete/random.html">Seeded random</a><span>A generator that repeats exactly from its seed, with unbiased draws from any family.</span></li>
+            <li><a href="https://ratmath.com/discrete/graphs.html">Graphs</a><span>Graphs written as text, exact weights, the standard families, products and line graphs.</span></li>
+            <li><a href="https://ratmath.com/discrete/connectivity.html">Connectivity</a><span>Components, bridges, strong components, topological order, two-colouring with an odd cycle as the reason.</span></li>
+            <li><a href="https://ratmath.com/discrete/shortest-paths.html">Shortest paths</a><span>Dijkstra, Bellman–Ford and Floyd–Warshall with exact distances; a negative cycle when there is one.</span></li>
+            <li><a href="https://ratmath.com/discrete/tours.html">Euler and Hamilton</a><span>Every edge once by Hierholzer; every vertex once by exhaustive search.</span></li>
+            <li><a href="https://ratmath.com/discrete/trees.html">Trees</a><span>Minimum spanning trees, the matrix-tree theorem, Prüfer codes.</span></li>
+            <li><a href="https://ratmath.com/discrete/linear-programming.html">Linear programming</a><span>An exact simplex method; every answer with its proof: dual prices, a Farkas vector or a ray.</span></li>
+            <li><a href="https://ratmath.com/discrete/integer-programs.html">Integer programs</a><span>Branch and bound on exact relaxations.</span></li>
+            <li><a href="https://ratmath.com/discrete/matrix-games.html">Matrix games</a><span>Zero-sum games: optimal mixed strategies and the value as fractions.</span></li>
+            <li><a href="https://ratmath.com/discrete/bimatrix-games.html">Bimatrix games</a><span>Dominance, every Nash equilibrium, Lemke–Howson.</span></li>
+            <li><a href="https://ratmath.com/discrete/generating-functions.html">Generating functions</a><span>Exact power series: products, reciprocals, composition, exp and log, EGFs.</span></li>
+            <li><a href="https://ratmath.com/discrete/recurrences.html">Recurrences</a><span>Closed forms with exact algebraic roots, guessing a recurrence, closed sums, the master theorem.</span></li>
+            <li><a href="https://ratmath.com/discrete/matchings-flows.html">Matchings and flows</a><span>Blossoms with a Tutte–Berge proof, König and Hall, assignment, stable matching, max flow and min cut.</span></li>
+            <li><a href="https://ratmath.com/discrete/colouring.html">Colouring and cliques</a><span>The chromatic number with the reason no fewer colours work; the chromatic polynomial.</span></li>
+            <li><a href="https://ratmath.com/discrete/planarity.html">Planarity</a><span>Faces for a planar graph, a Kuratowski subdivision for one that is not.</span></li>
+            <li><a href="https://ratmath.com/discrete/isomorphism-spectra.html">Isomorphism and spectra</a><span>Colour refinement, automorphism groups, exact eigenvalues, walks and spanning trees.</span></li>
+            <li><a href="https://ratmath.com/discrete/combinatorial-games.html">Combinatorial games</a><span>Sprague–Grundy, nim, Conway's numbers, nimbers and up, backward induction.</span></li>
+            <li><a href="https://ratmath.com/discrete/cooperative-voting.html">Cooperative games and voting</a><span>Shapley values, the core or a proof it is empty, voting power, voting methods, apportionment.</span></li>
+            <li><a href="https://ratmath.com/discrete/relations-orders.html">Relations and orders</a><span>Properties with counterexamples, Dilworth, linear extensions, Möbius functions, lattices.</span></li>
+            <li><a href="https://ratmath.com/discrete/polya.html">Pólya counting</a><span>Colourings up to symmetry: Burnside's lemma and the cycle index.</span></li>
+            <li><a href="https://ratmath.com/discrete/codes.html">Error-correcting codes</a><span>Linear codes with syndrome decoding in steps, Hamming codes, bounds, Reed–Solomon.</span></li>
+            <li><a href="https://ratmath.com/discrete/designs.html">Latin squares and designs</a><span>Orthogonal Latin squares, block designs, finite planes, Steiner triple systems.</span></li>
+          </ul>
+        </article>
+        <article class="pkg" id="numtheory">
+          <div>
+            <h3>Number theory<span class="status status-done">First parts available</span></h3>
+            <span class="id">@ratmath/numtheory</span>
+            <p class="about">Number theory with proofs attached. Built so far: primes with certificates checked by an independent verifier, factoring, congruences, reciprocity, sums of squares, Diophantine and Pell equations, continued fractions, quadratic forms and p-adic numbers. Elliptic curves and algebraic number theory are <a href="#numtheory-planned">planned</a>.</p>
+            <p class="links"><a href="https://ratmath.com/numtheory/">Overview</a> <a href="https://ratmath.com/numtheory/explore.html">Explore</a> <a href="https://ratmath.com/numtheory/reference.html">Reference</a> <a href="https://github.com/ratmath/numtheory">Source</a></p>
+          </div>
+          <ul class="topics">
+            <li><a href="https://ratmath.com/numtheory/primes.html">Primes and certificates</a><span>Proven below 2⁶⁴, certified above, refused when no proof is found.</span></li>
+            <li><a href="https://ratmath.com/numtheory/factoring.html">Factoring</a><span>Trial division, Pollard rho and p − 1, with proven prime factors.</span></li>
+            <li><a href="https://ratmath.com/numtheory/arithmetic-functions.html">Arithmetic functions</a><span>σ, φ, μ and friends; perfect and amicable numbers; Möbius inversion.</span></li>
+            <li><a href="https://ratmath.com/numtheory/congruences.html">Congruences</a><span>The Chinese remainder theorem for any moduli, Hensel lifting, primitive roots.</span></li>
+            <li><a href="https://ratmath.com/numtheory/reciprocity.html">Quadratic reciprocity</a><span>Legendre, Jacobi and Kronecker symbols, with the steps written out.</span></li>
+            <li><a href="https://ratmath.com/numtheory/squares.html">Sums of squares</a><span>Two, three and four squares, Jacobi's counts, Pythagorean triples.</span></li>
+            <li><a href="https://ratmath.com/numtheory/diophantine.html">Linear equations</a><span>Every integer solution as a lattice, Frobenius numbers, Egyptian fractions.</span></li>
+            <li><a href="https://ratmath.com/numtheory/continued-fractions.html">Continued fractions</a><span>Exact expansions, periodic quadratic irrationals, fundamental units.</span></li>
+            <li><a href="https://ratmath.com/numtheory/pell.html">Pell equations</a><span>x² − Dy² = N: every class of solutions.</span></li>
+            <li><a href="https://ratmath.com/numtheory/quadratic-forms.html">Quadratic forms</a><span>Reduction with proof, composition, class groups and their structure.</span></li>
+            <li><a href="https://ratmath.com/numtheory/padic.html">p-adic numbers</a><span>Lazy exact digits, square and Hensel roots, exp and log.</span></li>
           </ul>
         </article>
         <article class="pkg" id="logic">
           <div>
             <h3>Logic<span class="status status-done">First parts available</span></h3>
             <span class="id">@ratmath/logic</span>
-            <p class="about">Formal logic you can compute with: valid with a proof, invalid with a countermodel, or unresolved. Built so far: propositional logic and four proof systems with checkers, proof search and hints. Predicate logic and more are <a href="#logic-planned">planned</a>.</p>
+            <p class="about">Formal logic you can compute with: valid with a proof, invalid with a countermodel, or unresolved. Built so far: propositional logic and four proof systems with checkers, proof search and hints; predicate logic with finite models and quantifier proofs; circuits, syllogisms and modal logic; automata, grammars and machines. Ordinals, cardinals and Peano arithmetic are <a href="#logic-planned">planned</a>.</p>
             <p class="links"><a href="https://ratmath.com/logic/">Overview</a> <a href="https://ratmath.com/logic/explore.html">Explore</a> <a href="https://ratmath.com/logic/reference.html">Reference</a> <a href="https://github.com/ratmath/logic">Source</a></p>
           </div>
           <ul class="topics">
@@ -476,13 +519,21 @@ R`<span class="n">1.2[3:6]</span>`         <span class="c">// 1.23 to 1.26</span
             <li><a href="https://ratmath.com/logic/truth-trees.html">Truth trees</a><span>Trees that close to prove validity or stay open with a countermodel.</span></li>
             <li><a href="https://ratmath.com/logic/resolution.html">Resolution</a><span>The evidence the solver gives, and a checker for refutations by hand.</span></li>
             <li><a href="https://ratmath.com/logic/proof-search.html">Proof search and hints</a><span>Proofs written for you, and hints that give the next line only.</span></li>
+            <li><a href="https://ratmath.com/logic/predicate-logic.html">Predicate logic</a><span>Quantifiers, function symbols and identity; substitution without capture; prenex and Skolem forms.</span></li>
+            <li><a href="https://ratmath.com/logic/models.html">Finite models</a><span>Truth in a structure with witnesses, and model search that checks what it finds.</span></li>
+            <li><a href="https://ratmath.com/logic/first-order-proofs.html">First-order proofs and trees</a><span>Quantifier rules with their conditions on names, and trees that close or give a countermodel.</span></li>
+            <li><a href="https://ratmath.com/logic/circuits.html">Circuits and Karnaugh maps</a><span>Adders, NAND-only circuits, equivalence with a witness, maps grouped into shortest forms.</span></li>
+            <li><a href="https://ratmath.com/logic/syllogisms.html">Syllogisms</a><span>All 256 moods and figures decided on the Venn diagram, with names and counterexamples.</span></li>
+            <li><a href="https://ratmath.com/logic/modal-logic.html">Modal logic</a><span>Kripke models, and validity in K, D, T, B, S4 and S5 with checked countermodels.</span></li>
+            <li><a href="https://ratmath.com/logic/automata.html">Automata and regular expressions</a><span>Minimal DFAs, equivalence with a shortest distinguishing word, regexes both ways.</span></li>
+            <li><a href="https://ratmath.com/logic/machines.html">Grammars and machines</a><span>CYK parse trees, pushdown automata, Turing machines, recursive functions.</span></li>
           </ul>
         </article>
         <article class="pkg" id="stats">
           <div>
             <h3>Statistics<span class="status status-done">First parts available</span></h3>
             <span class="id">@ratmath/stats</span>
-            <p class="about">Probability and statistics with every answer labelled exact, certified or simulated. Built so far: finite probability, distributions, descriptive statistics, exact tests, and data generated from a known model with noise to test what a procedure recovers. Inference and regression are <a href="#stats-planned">planned</a>.</p>
+            <p class="about">Probability and statistics with every answer labelled exact, certified or simulated. Built so far: finite probability, distributions, descriptive statistics, exact tests, data generated from a known model with noise to test what a procedure recovers, the standard tests and intervals, and regression and analysis of variance with exact coefficients. Rank tests, the bootstrap, Markov chains and Bayesian updating are <a href="#stats-planned">planned</a>.</p>
             <p class="links"><a href="https://ratmath.com/stats/">Overview</a> <a href="https://ratmath.com/stats/explore.html">Explore</a> <a href="https://ratmath.com/stats/reference.html">Reference</a> <a href="https://github.com/ratmath/stats">Source</a></p>
           </div>
           <ul class="topics">
@@ -495,6 +546,13 @@ R`<span class="n">1.2[3:6]</span>`         <span class="c">// 1.23 to 1.26</span
             <li><a href="https://ratmath.com/stats/sampling.html">Seeded sampling</a><span>A seeded generator with named streams, and exact rational draws.</span></li>
             <li><a href="https://ratmath.com/stats/models.html">Models with noise</a><span>A known truth disturbed by noise, contamination, censoring and more.</span></li>
             <li><a href="https://ratmath.com/stats/experiments.html">Experiments</a><span>Coverage, size, power and bias, each with its own sampling error.</span></li>
+            <li><a href="https://ratmath.com/stats/means.html">Tests for means</a><span>z and t tests, paired, Welch and pooled, with exact t² and certified p-values.</span></li>
+            <li><a href="https://ratmath.com/stats/variances-proportions.html">Variances and proportions</a><span>Chi-square and F tests for spread; z tests and Wilson intervals for proportions.</span></li>
+            <li><a href="https://ratmath.com/stats/chi-square.html">Chi-square tests</a><span>Goodness of fit and independence, with Yates' correction and Fisher's test.</span></li>
+            <li><a href="https://ratmath.com/stats/estimation.html">Fitting distributions</a><span>Maximum likelihood and the method of moments for ten families.</span></li>
+            <li><a href="https://ratmath.com/stats/testing-the-tests.html">Testing the tests</a><span>Seeded experiments check that intervals cover and tests keep their size.</span></li>
+            <li><a href="https://ratmath.com/stats/regression.html">Linear regression</a><span>Exact least squares, prediction intervals, leverage and nested models.</span></li>
+            <li><a href="https://ratmath.com/stats/anova.html">Analysis of variance</a><span>Exact sums of squares, as a regression on indicators, and two factors.</span></li>
           </ul>
         </article>
         <article class="pkg" id="chaos">
@@ -531,9 +589,9 @@ R`<span class="n">1.2[3:6]</span>`         <span class="c">// 1.23 to 1.26</span
         </article>
         <article class="pkg" id="finance">
           <div>
-            <h3>Finance<span class="status status-done">First parts available</span></h3>
+            <h3>Finance<span class="status status-done">Available</span></h3>
             <span class="id">@ratmath/finance</span>
-            <p class="about">The mathematics of finance with exact money: rounding only by a named rule, rates proven, scenarios projected exactly. Built so far: time value, loans, cash flows, bonds and scenarios. Uncertain inputs, portfolios and options are <a href="#finance-planned">planned</a>.</p>
+            <p class="about">The mathematics of finance with exact money: rounding only by a named rule, rates proven, scenarios projected exactly. Time value, loans, cash flows, bonds, scenarios and seeded repeated runs with uncertain inputs, portfolios, options and life contingencies. Pictures are <a href="#finance-planned">planned</a>.</p>
             <p class="links"><a href="https://ratmath.com/finance/">Overview</a> <a href="https://ratmath.com/finance/explore.html">Explore</a> <a href="https://ratmath.com/finance/reference.html">Reference</a> <a href="https://github.com/ratmath/finance">Source</a></p>
           </div>
           <ul class="topics">
@@ -545,6 +603,10 @@ R`<span class="n">1.2[3:6]</span>`         <span class="c">// 1.23 to 1.26</span
             <li><a href="https://ratmath.com/finance/bonds.html">Bonds</a><span>Price, yield, accrued interest, duration and convexity.</span></li>
             <li><a href="https://ratmath.com/finance/yield-curves.html">Yield curves</a><span>Spot and forward rates from bond prices; immunisation.</span></li>
             <li><a href="https://ratmath.com/finance/scenarios.html">Scenarios</a><span>Exact projection, what-if comparison and exact sensitivities.</span></li>
+            <li><a href="https://ratmath.com/finance/uncertain.html">Uncertain inputs and repeated runs</a><span>Random returns, inflation and events; the chance of running out with an exact interval.</span></li>
+            <li><a href="https://ratmath.com/finance/portfolios.html">Portfolios</a><span>The efficient frontier exactly; long-only portfolios proven optimal; CAPM.</span></li>
+            <li><a href="https://ratmath.com/finance/options.html">Options</a><span>Exact break-evens and binomial trees; certified Black–Scholes and implied volatility.</span></li>
+            <li><a href="https://ratmath.com/finance/life.html">Life contingencies</a><span>Life tables, annuities, insurances, premiums and reserves, all exact.</span></li>
           </ul>
         </article>
     </section>
@@ -582,11 +644,9 @@ R`<span class="n">1.2[3:6]</span>`         <span class="c">// 1.23 to 1.26</span
           <div>
             <h3>Statistics, continued<span class="status status-plan">Planned</span></h3>
             <span class="id">@ratmath/stats</span>
-            <p class="about">Inference and regression, on top of the <a href="#stats">distributions, exact tests and experiments already built</a>.</p>
+            <p class="about">Resampling, rank methods and Bayesian ideas, on top of the <a href="#stats">distributions, tests and regression already built</a>.</p>
           </div>
           <ul class="topics">
-            <li><span>Estimation, intervals and the standard tests</span></li>
-            <li><span>Regression and analysis of variance</span></li>
             <li><span>Rank tests and the bootstrap</span></li>
             <li><span>Markov chains and Bayesian updating</span></li>
           </ul>
@@ -595,30 +655,22 @@ R`<span class="n">1.2[3:6]</span>`         <span class="c">// 1.23 to 1.26</span
           <div>
             <h3>Discrete mathematics, continued<span class="status status-plan">Planned</span></h3>
             <span class="id">@ratmath/discrete</span>
-            <p class="about">Generating functions, graphs and games, on top of the <a href="#discrete">counting and enumeration already built</a>.</p>
+            <p class="about">Graph drawing (in graphics), on top of the <a href="#discrete">counting, graphs, graph theory, generating functions, games, orders, codes and designs already built</a>.</p>
           </div>
           <ul class="topics">
-            <li><span>Generating functions and recurrences</span></li>
-            <li><span>Graphs: paths, trees, matchings, flows, colouring</span></li>
-            <li><span>Exact linear programming</span></li>
-            <li><span>Matrix, combinatorial and cooperative games</span></li>
-            <li><span>Relations and partial orders</span></li>
-            <li><span>Codes and designs</span></li>
+            <li><span>Graph drawing: force-directed, layered and planar layouts</span></li>
           </ul>
         </article>
-        <article class="pkg" id="numtheory">
+        <article class="pkg" id="numtheory-planned">
           <div>
-            <h3>Number theory<span class="status status-plan">Planned</span></h3>
+            <h3>Number theory, continued<span class="status status-plan">Planned</span></h3>
             <span class="id">@ratmath/numtheory</span>
-            <p class="about">From primes and congruences to elliptic curves and class groups.</p>
+            <p class="about">Elliptic curves and algebraic number theory, on top of the <a href="#numtheory">primes, congruences, forms and p-adics already built</a>.</p>
           </div>
           <ul class="topics">
-            <li><span>Primes with certificates</span></li>
-            <li><span>Congruences and quadratic reciprocity</span></li>
-            <li><span>Diophantine equations and quadratic forms</span></li>
-            <li><span>p-adic numbers</span></li>
-            <li><span>Elliptic curves</span></li>
+            <li><span>Elliptic curves, ECM and curve-based primality certificates</span></li>
             <li><span>Integral bases, class groups and units</span></li>
+            <li><span>π(x), characters, ζ and L values</span></li>
           </ul>
         </article>
         <article class="pkg" id="structures-planned">
@@ -639,14 +691,12 @@ R`<span class="n">1.2[3:6]</span>`         <span class="c">// 1.23 to 1.26</span
           <div>
             <h3>Logic, continued<span class="status status-plan">Planned</span></h3>
             <span class="id">@ratmath/logic</span>
-            <p class="about">Beyond propositional logic, on top of the <a href="#logic">formulas and proof systems already built</a>.</p>
+            <p class="about">More on top of the <a href="#logic">logic already built</a>.</p>
           </div>
           <ul class="topics">
-            <li><span>Predicate logic and finite models</span></li>
-            <li><span>Circuits, Karnaugh maps and syllogisms</span></li>
-            <li><span>Modal logic</span></li>
             <li><span>Ordinals and cardinals</span></li>
-            <li><span>Automata and Turing machines</span></li>
+            <li><span>Peano arithmetic and Gödel numbering</span></li>
+            <li><span>Pictures: Venn diagrams, Kripke frames, automata, trees</span></li>
           </ul>
         </article>
         <article class="pkg" id="chaos-planned">
@@ -681,24 +731,20 @@ R`<span class="n">1.2[3:6]</span>`         <span class="c">// 1.23 to 1.26</span
           <div>
             <h3>Finance, continued<span class="status status-plan">Planned</span></h3>
             <span class="id">@ratmath/finance</span>
-            <p class="about">More on top of the <a href="#finance">loans, bonds and scenarios already built</a>.</p>
+            <p class="about">More on top of the <a href="#finance">finance already built</a>.</p>
           </div>
           <ul class="topics">
-            <li><span>Uncertain inputs and repeated runs</span></li>
-            <li><span>Portfolios, options and life contingencies</span></li>
-            <li><span>Pictures</span></li>
+            <li><span>Pictures: balance and amortisation charts, percentile bands, yield curves, option payoffs</span></li>
           </ul>
         </article>
         <article class="pkg" id="extensions">
           <div>
             <h3>More in the current libraries<span class="status status-plan">Planned</span></h3>
             
-            <p class="about">Differential equations, differential geometry, numerical methods and Fourier transforms are now <a href="#analytic">in analytic</a>. Still to come:</p>
+            <p class="about">Differential equations, differential geometry, numerical methods and Fourier transforms are now <a href="#analytic">in analytic</a>, and iterative methods <a href="#linalg">in linalg</a>. Still to come:</p>
           </div>
           <ul class="topics">
-            <li><span>Iterative and eigenvalue methods in linalg, run in floats and exactly side by side</span></li>
             <li><span>Phase portraits, curvature pictures and animated solutions in graphics</span></li>
-            <li><span>Laplace transforms of step and impulse inputs; linear systems larger than 2 by 2</span></li>
           </ul>
         </article>
     </section>

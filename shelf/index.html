@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>RatMath Shelf</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="The RatMath Shelf: subject libraries for JavaScript built on RatMath Core. Calculus, algebra, linear algebra, graphics, symbolic algebra, complex numbers, counting and logic today, with exact or certified answers; what each can do and what is planned.">
+<meta name="description" content="The RatMath Shelf: subject libraries for JavaScript built on RatMath Core. Calculus, algebra, linear algebra, graphics, symbolic algebra, complex numbers, counting, logic and statistics today, with exact or certified answers; what each can do and what is planned.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23173a4a'/%3E%3Ctext x='16' y='14' font-family='Georgia,serif' font-size='12' fill='%23f1b24a' text-anchor='middle'%3Ep%3C/text%3E%3Crect x='8' y='16.5' width='16' height='1.6' fill='%23f1b24a'/%3E%3Ctext x='16' y='28' font-family='Georgia,serif' font-size='12' fill='%23f1b24a' text-anchor='middle'%3Eq%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -453,6 +453,25 @@ R`<span class="n">1.2[3:6]</span>`         <span class="c">// 1.23 to 1.26</span
             <li><a href="https://ratmath.com/logic/proof-search.html">Proof search and hints</a><span>Proofs written for you, and hints that give the next line only.</span></li>
           </ul>
         </article>
+        <article class="pkg" id="stats">
+          <div>
+            <h3>Statistics<span class="status status-done">First parts available</span></h3>
+            <span class="id">@ratmath/stats</span>
+            <p class="about">Probability and statistics with every answer labelled exact, certified or simulated. Built so far: finite probability, distributions, descriptive statistics, exact tests, and data generated from a known model with noise to test what a procedure recovers. Inference and regression are <a href="#stats-planned">planned</a>.</p>
+            <p class="links"><a href="https://ratmath.com/stats/">Overview</a> <a href="https://ratmath.com/stats/explore.html">Explore</a> <a href="https://ratmath.com/stats/reference.html">Reference</a> <a href="https://github.com/ratmath/stats">Source</a></p>
+          </div>
+          <ul class="topics">
+            <li><a href="https://ratmath.com/stats/finite-probability.html">Finite probability</a><span>Sample spaces, conditioning, expectation and Bayes' rule, in fractions.</span></li>
+            <li><a href="https://ratmath.com/stats/discrete-distributions.html">Discrete distributions</a><span>Binomial, hypergeometric and geometric exactly; Poisson certified.</span></li>
+            <li><a href="https://ratmath.com/stats/descriptive.html">Descriptive statistics</a><span>Exact means and variances, quantiles by named rules, least squares.</span></li>
+            <li><a href="https://ratmath.com/stats/exact-tests.html">Exact tests</a><span>Binomial, Fisher and permutation tests with p-values as fractions.</span></li>
+            <li><a href="https://ratmath.com/stats/continuous-distributions.html">Continuous distributions</a><span>Normal, t, chi-square, F, gamma and beta to any precision.</span></li>
+            <li><a href="https://ratmath.com/stats/certified-answers.html">Certified answers</a><span>Enclosures, and comparisons that can be too close to call.</span></li>
+            <li><a href="https://ratmath.com/stats/sampling.html">Seeded sampling</a><span>A seeded generator with named streams, and exact rational draws.</span></li>
+            <li><a href="https://ratmath.com/stats/models.html">Models with noise</a><span>A known truth disturbed by noise, contamination, censoring and more.</span></li>
+            <li><a href="https://ratmath.com/stats/experiments.html">Experiments</a><span>Coverage, size, power and bias, each with its own sampling error.</span></li>
+          </ul>
+        </article>
     </section>
 
     <section class="block planned" id="planned">
@@ -486,20 +505,17 @@ R`<span class="n">1.2[3:6]</span>`         <span class="c">// 1.23 to 1.26</span
             <li><span>The complex gamma and zeta functions</span></li>
           </ul>
         </article>
-        <article class="pkg" id="stats">
+        <article class="pkg" id="stats-planned">
           <div>
-            <h3>Statistics<span class="status status-plan">Planned</span></h3>
+            <h3>Statistics, continued<span class="status status-plan">Planned</span></h3>
             <span class="id">@ratmath/stats</span>
-            <p class="about">Probability and statistics in one library, with answers labelled exact, certified or simulated.</p>
+            <p class="about">Inference and regression, on top of the <a href="#stats">distributions, exact tests and experiments already built</a>.</p>
           </div>
           <ul class="topics">
-            <li><span>Finite probability and the discrete distributions</span></li>
-            <li><span>Continuous distributions with certified values</span></li>
-            <li><span>Generating data from a known model, with noise</span></li>
-            <li><span>Experiments that test the tests</span></li>
             <li><span>Estimation, intervals and the standard tests</span></li>
             <li><span>Regression and analysis of variance</span></li>
-            <li><span>Markov chains</span></li>
+            <li><span>Rank tests and the bootstrap</span></li>
+            <li><span>Markov chains and Bayesian updating</span></li>
           </ul>
         </article>
         <article class="pkg" id="discrete-planned">

@@ -447,7 +447,7 @@ R`<span class="n">1.2[3:6]</span>`         <span class="c">// 1.23 to 1.26</span
           <div>
             <h3>Discrete mathematics<span class="status status-done">First parts available</span></h3>
             <span class="id">@ratmath/discrete</span>
-            <p class="about">Combinatorics, graphs and games. Built so far: exact counting, families of objects you can list, rank and unrank, a seeded random generator, and graphs with exact weights: connectivity, shortest paths, tours and trees. Generating functions, matchings, flows and games are <a href="#discrete-planned">planned</a>.</p>
+            <p class="about">Combinatorics, graphs and games. Built so far: exact counting, families of objects you can list, rank and unrank, a seeded random generator, graphs with exact weights (connectivity, shortest paths, tours and trees), and exact linear programming with matrix and bimatrix games, each answer with its certificate. Generating functions, matchings, flows and more games are <a href="#discrete-planned">planned</a>.</p>
             <p class="links"><a href="https://ratmath.com/discrete/">Overview</a> <a href="https://ratmath.com/discrete/explore.html">Explore</a> <a href="https://ratmath.com/discrete/reference.html">Reference</a> <a href="https://github.com/ratmath/discrete">Source</a></p>
           </div>
           <ul class="topics">
@@ -460,6 +460,10 @@ R`<span class="n">1.2[3:6]</span>`         <span class="c">// 1.23 to 1.26</span
             <li><a href="https://ratmath.com/discrete/shortest-paths.html">Shortest paths</a><span>Dijkstra, Bellman–Ford and Floyd–Warshall with exact distances; a negative cycle when there is one.</span></li>
             <li><a href="https://ratmath.com/discrete/tours.html">Euler and Hamilton</a><span>Every edge once by Hierholzer; every vertex once by exhaustive search.</span></li>
             <li><a href="https://ratmath.com/discrete/trees.html">Trees</a><span>Minimum spanning trees, the matrix-tree theorem, Prüfer codes.</span></li>
+            <li><a href="https://ratmath.com/discrete/linear-programming.html">Linear programming</a><span>An exact simplex method; every answer with its proof: dual prices, a Farkas vector or a ray.</span></li>
+            <li><a href="https://ratmath.com/discrete/integer-programs.html">Integer programs</a><span>Branch and bound on exact relaxations.</span></li>
+            <li><a href="https://ratmath.com/discrete/matrix-games.html">Matrix games</a><span>Zero-sum games: optimal mixed strategies and the value as fractions.</span></li>
+            <li><a href="https://ratmath.com/discrete/bimatrix-games.html">Bimatrix games</a><span>Dominance, every Nash equilibrium, Lemke–Howson.</span></li>
           </ul>
         </article>
         <article class="pkg" id="numtheory">
@@ -625,13 +629,12 @@ R`<span class="n">1.2[3:6]</span>`         <span class="c">// 1.23 to 1.26</span
           <div>
             <h3>Discrete mathematics, continued<span class="status status-plan">Planned</span></h3>
             <span class="id">@ratmath/discrete</span>
-            <p class="about">Generating functions, more graph theory and games, on top of the <a href="#discrete">counting, enumeration and graphs already built</a>.</p>
+            <p class="about">Generating functions, more graph theory and more games, on top of the <a href="#discrete">counting, enumeration, graphs, linear programming and matrix games already built</a>.</p>
           </div>
           <ul class="topics">
             <li><span>Generating functions and recurrences</span></li>
             <li><span>Graphs: matchings, flows, colouring, planarity, isomorphism</span></li>
-            <li><span>Exact linear programming</span></li>
-            <li><span>Matrix, combinatorial and cooperative games</span></li>
+            <li><span>Combinatorial, extensive-form and cooperative games; voting</span></li>
             <li><span>Relations and partial orders</span></li>
             <li><span>Codes and designs</span></li>
           </ul>

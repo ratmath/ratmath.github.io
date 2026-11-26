@@ -339,7 +339,6 @@ R`<span class="n">1.2[3:6]</span>`         <span class="c">// 1.23 to 1.26</span
             <li><a href="https://ratmath.com/algebraic/galois.html">Galois groups</a><span>Groups to degree 7 and the Galois correspondence.</span></li>
             <li><a href="https://ratmath.com/algebraic/angles.html">Angles and roots of unity</a><span>Exact sines and cosines of rational angles.</span></li>
             <li><a href="https://ratmath.com/algebraic/polynomials.html">Polynomial toolkit</a><span>Resultants, discriminants, partial fractions.</span></li>
-            <li><a href="https://ratmath.com/algebraic/continued-fractions.html">Continued fractions</a><span>Periodic expansions, Pell equations, units.</span></li>
             <li><a href="https://ratmath.com/algebraic/recognize.html">Recognising numbers</a><span>From digits back to an exact form.</span></li>
           </ul>
         </article>
@@ -448,7 +447,7 @@ R`<span class="n">1.2[3:6]</span>`         <span class="c">// 1.23 to 1.26</span
           <div>
             <h3>Discrete mathematics<span class="status status-done">First parts available</span></h3>
             <span class="id">@ratmath/discrete</span>
-            <p class="about">Combinatorics, graphs and games. Built so far: exact counting, families of objects you can list, rank and unrank, and a seeded random generator. Generating functions, graphs and games are <a href="#discrete-planned">planned</a>.</p>
+            <p class="about">Combinatorics, graphs and games. Built so far: exact counting, families of objects you can list, rank and unrank, a seeded random generator, and graphs with exact weights: connectivity, shortest paths, tours and trees. Generating functions, matchings, flows and games are <a href="#discrete-planned">planned</a>.</p>
             <p class="links"><a href="https://ratmath.com/discrete/">Overview</a> <a href="https://ratmath.com/discrete/explore.html">Explore</a> <a href="https://ratmath.com/discrete/reference.html">Reference</a> <a href="https://github.com/ratmath/discrete">Source</a></p>
           </div>
           <ul class="topics">
@@ -456,6 +455,32 @@ R`<span class="n">1.2[3:6]</span>`         <span class="c">// 1.23 to 1.26</span
             <li><a href="https://ratmath.com/discrete/inclusion-exclusion.html">Inclusion and exclusion</a><span>The sieve formula with its terms shown, and the pigeonhole principle.</span></li>
             <li><a href="https://ratmath.com/discrete/enumeration.html">Enumeration and ranking</a><span>Permutations, subsets, partitions and more: the object at any position, and the position of any object.</span></li>
             <li><a href="https://ratmath.com/discrete/random.html">Seeded random</a><span>A generator that repeats exactly from its seed, with unbiased draws from any family.</span></li>
+            <li><a href="https://ratmath.com/discrete/graphs.html">Graphs</a><span>Graphs written as text, exact weights, the standard families, products and line graphs.</span></li>
+            <li><a href="https://ratmath.com/discrete/connectivity.html">Connectivity</a><span>Components, bridges, strong components, topological order, two-colouring with an odd cycle as the reason.</span></li>
+            <li><a href="https://ratmath.com/discrete/shortest-paths.html">Shortest paths</a><span>Dijkstra, Bellman–Ford and Floyd–Warshall with exact distances; a negative cycle when there is one.</span></li>
+            <li><a href="https://ratmath.com/discrete/tours.html">Euler and Hamilton</a><span>Every edge once by Hierholzer; every vertex once by exhaustive search.</span></li>
+            <li><a href="https://ratmath.com/discrete/trees.html">Trees</a><span>Minimum spanning trees, the matrix-tree theorem, Prüfer codes.</span></li>
+          </ul>
+        </article>
+        <article class="pkg" id="numtheory">
+          <div>
+            <h3>Number theory<span class="status status-done">First parts available</span></h3>
+            <span class="id">@ratmath/numtheory</span>
+            <p class="about">Number theory with proofs attached. Built so far: primes with certificates checked by an independent verifier, factoring, congruences, reciprocity, sums of squares, Diophantine and Pell equations, continued fractions, quadratic forms and p-adic numbers. Elliptic curves and algebraic number theory are <a href="#numtheory-planned">planned</a>.</p>
+            <p class="links"><a href="https://ratmath.com/numtheory/">Overview</a> <a href="https://ratmath.com/numtheory/explore.html">Explore</a> <a href="https://ratmath.com/numtheory/reference.html">Reference</a> <a href="https://github.com/ratmath/numtheory">Source</a></p>
+          </div>
+          <ul class="topics">
+            <li><a href="https://ratmath.com/numtheory/primes.html">Primes and certificates</a><span>Proven below 2⁶⁴, certified above, refused when no proof is found.</span></li>
+            <li><a href="https://ratmath.com/numtheory/factoring.html">Factoring</a><span>Trial division, Pollard rho and p − 1, with proven prime factors.</span></li>
+            <li><a href="https://ratmath.com/numtheory/arithmetic-functions.html">Arithmetic functions</a><span>σ, φ, μ and friends; perfect and amicable numbers; Möbius inversion.</span></li>
+            <li><a href="https://ratmath.com/numtheory/congruences.html">Congruences</a><span>The Chinese remainder theorem for any moduli, Hensel lifting, primitive roots.</span></li>
+            <li><a href="https://ratmath.com/numtheory/reciprocity.html">Quadratic reciprocity</a><span>Legendre, Jacobi and Kronecker symbols, with the steps written out.</span></li>
+            <li><a href="https://ratmath.com/numtheory/squares.html">Sums of squares</a><span>Two, three and four squares, Jacobi's counts, Pythagorean triples.</span></li>
+            <li><a href="https://ratmath.com/numtheory/diophantine.html">Linear equations</a><span>Every integer solution as a lattice, Frobenius numbers, Egyptian fractions.</span></li>
+            <li><a href="https://ratmath.com/numtheory/continued-fractions.html">Continued fractions</a><span>Exact expansions, periodic quadratic irrationals, fundamental units.</span></li>
+            <li><a href="https://ratmath.com/numtheory/pell.html">Pell equations</a><span>x² − Dy² = N: every class of solutions.</span></li>
+            <li><a href="https://ratmath.com/numtheory/quadratic-forms.html">Quadratic forms</a><span>Reduction with proof, composition, class groups and their structure.</span></li>
+            <li><a href="https://ratmath.com/numtheory/padic.html">p-adic numbers</a><span>Lazy exact digits, square and Hensel roots, exp and log.</span></li>
           </ul>
         </article>
         <article class="pkg" id="logic">
@@ -595,30 +620,27 @@ R`<span class="n">1.2[3:6]</span>`         <span class="c">// 1.23 to 1.26</span
           <div>
             <h3>Discrete mathematics, continued<span class="status status-plan">Planned</span></h3>
             <span class="id">@ratmath/discrete</span>
-            <p class="about">Generating functions, graphs and games, on top of the <a href="#discrete">counting and enumeration already built</a>.</p>
+            <p class="about">Generating functions, more graph theory and games, on top of the <a href="#discrete">counting, enumeration and graphs already built</a>.</p>
           </div>
           <ul class="topics">
             <li><span>Generating functions and recurrences</span></li>
-            <li><span>Graphs: paths, trees, matchings, flows, colouring</span></li>
+            <li><span>Graphs: matchings, flows, colouring, planarity, isomorphism</span></li>
             <li><span>Exact linear programming</span></li>
             <li><span>Matrix, combinatorial and cooperative games</span></li>
             <li><span>Relations and partial orders</span></li>
             <li><span>Codes and designs</span></li>
           </ul>
         </article>
-        <article class="pkg" id="numtheory">
+        <article class="pkg" id="numtheory-planned">
           <div>
-            <h3>Number theory<span class="status status-plan">Planned</span></h3>
+            <h3>Number theory, continued<span class="status status-plan">Planned</span></h3>
             <span class="id">@ratmath/numtheory</span>
-            <p class="about">From primes and congruences to elliptic curves and class groups.</p>
+            <p class="about">Elliptic curves and algebraic number theory, on top of the <a href="#numtheory">primes, congruences, forms and p-adics already built</a>.</p>
           </div>
           <ul class="topics">
-            <li><span>Primes with certificates</span></li>
-            <li><span>Congruences and quadratic reciprocity</span></li>
-            <li><span>Diophantine equations and quadratic forms</span></li>
-            <li><span>p-adic numbers</span></li>
-            <li><span>Elliptic curves</span></li>
+            <li><span>Elliptic curves, ECM and curve-based primality certificates</span></li>
             <li><span>Integral bases, class groups and units</span></li>
+            <li><span>π(x), characters, ζ and L values</span></li>
           </ul>
         </article>
         <article class="pkg" id="structures-planned">

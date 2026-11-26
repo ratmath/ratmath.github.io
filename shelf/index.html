@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>RatMath Shelf</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="The RatMath Shelf: subject libraries for JavaScript built on RatMath Core. Calculus, algebra, linear algebra, graphics, symbolic algebra and complex numbers today, with exact or certified answers; what each can do and what is planned.">
+<meta name="description" content="The RatMath Shelf: subject libraries for JavaScript built on RatMath Core. Calculus, algebra, linear algebra, graphics, symbolic algebra, complex numbers, counting and logic today, with exact or certified answers; what each can do and what is planned.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23173a4a'/%3E%3Ctext x='16' y='14' font-family='Georgia,serif' font-size='12' fill='%23f1b24a' text-anchor='middle'%3Ep%3C/text%3E%3Crect x='8' y='16.5' width='16' height='1.6' fill='%23f1b24a'/%3E%3Ctext x='16' y='28' font-family='Georgia,serif' font-size='12' fill='%23f1b24a' text-anchor='middle'%3Eq%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -419,6 +419,40 @@ R`<span class="n">1.2[3:6]</span>`         <span class="c">// 1.23 to 1.26</span
             <li><a href="https://ratmath.com/complex/integer-quaternions.html">Integer quaternions</a><span>Division with remainder and sums of four squares.</span></li>
           </ul>
         </article>
+        <article class="pkg" id="discrete">
+          <div>
+            <h3>Discrete mathematics<span class="status status-done">First parts available</span></h3>
+            <span class="id">@ratmath/discrete</span>
+            <p class="about">Combinatorics, graphs and games. Built so far: exact counting, families of objects you can list, rank and unrank, and a seeded random generator. Generating functions, graphs and games are <a href="#discrete-planned">planned</a>.</p>
+            <p class="links"><a href="https://ratmath.com/discrete/">Overview</a> <a href="https://ratmath.com/discrete/explore.html">Explore</a> <a href="https://ratmath.com/discrete/reference.html">Reference</a> <a href="https://github.com/ratmath/discrete">Source</a></p>
+          </div>
+          <ul class="topics">
+            <li><a href="https://ratmath.com/discrete/counting.html">Counting</a><span>Binomials, Stirling and Bell numbers, partitions, Catalan numbers, all exact.</span></li>
+            <li><a href="https://ratmath.com/discrete/inclusion-exclusion.html">Inclusion and exclusion</a><span>The sieve formula with its terms shown, and the pigeonhole principle.</span></li>
+            <li><a href="https://ratmath.com/discrete/enumeration.html">Enumeration and ranking</a><span>Permutations, subsets, partitions and more: the object at any position, and the position of any object.</span></li>
+            <li><a href="https://ratmath.com/discrete/random.html">Seeded random</a><span>A generator that repeats exactly from its seed, with unbiased draws from any family.</span></li>
+          </ul>
+        </article>
+        <article class="pkg" id="logic">
+          <div>
+            <h3>Logic<span class="status status-done">First parts available</span></h3>
+            <span class="id">@ratmath/logic</span>
+            <p class="about">Formal logic you can compute with: valid with a proof, invalid with a countermodel, or unresolved. Built so far: propositional logic and four proof systems with checkers, proof search and hints. Predicate logic and more are <a href="#logic-planned">planned</a>.</p>
+            <p class="links"><a href="https://ratmath.com/logic/">Overview</a> <a href="https://ratmath.com/logic/explore.html">Explore</a> <a href="https://ratmath.com/logic/reference.html">Reference</a> <a href="https://github.com/ratmath/logic">Source</a></p>
+          </div>
+          <ul class="topics">
+            <li><a href="https://ratmath.com/logic/formulas.html">Formulas</a><span>A parser for what people type; printing in Unicode, ASCII and TeX.</span></li>
+            <li><a href="https://ratmath.com/logic/truth-tables.html">Truth tables</a><span>Full tables with a column for each part, and model counts.</span></li>
+            <li><a href="https://ratmath.com/logic/normal-forms.html">Normal forms</a><span>Negation, conjunctive and disjunctive forms, and the Tseitin form.</span></li>
+            <li><a href="https://ratmath.com/logic/satisfiability.html">Satisfiability and validity</a><span>Each answer comes with a model or a refutation that is checked.</span></li>
+            <li><a href="https://ratmath.com/logic/simplification.html">Simplification</a><span>Shortest two-level forms by the Quine–McCluskey method.</span></li>
+            <li><a href="https://ratmath.com/logic/natural-deduction.html">Natural deduction</a><span>A proof checker that names the line, the rule and what was missing.</span></li>
+            <li><a href="https://ratmath.com/logic/sequents.html">Sequent calculus</a><span>Classical and intuitionistic derivations, with Kripke countermodels.</span></li>
+            <li><a href="https://ratmath.com/logic/truth-trees.html">Truth trees</a><span>Trees that close to prove validity or stay open with a countermodel.</span></li>
+            <li><a href="https://ratmath.com/logic/resolution.html">Resolution</a><span>The evidence the solver gives, and a checker for refutations by hand.</span></li>
+            <li><a href="https://ratmath.com/logic/proof-search.html">Proof search and hints</a><span>Proofs written for you, and hints that give the next line only.</span></li>
+          </ul>
+        </article>
     </section>
 
     <section class="block planned" id="planned">
@@ -468,14 +502,13 @@ R`<span class="n">1.2[3:6]</span>`         <span class="c">// 1.23 to 1.26</span
             <li><span>Markov chains</span></li>
           </ul>
         </article>
-        <article class="pkg" id="discrete">
+        <article class="pkg" id="discrete-planned">
           <div>
-            <h3>Discrete mathematics<span class="status status-plan">Planned</span></h3>
+            <h3>Discrete mathematics, continued<span class="status status-plan">Planned</span></h3>
             <span class="id">@ratmath/discrete</span>
-            <p class="about">Combinatorics, graphs and games.</p>
+            <p class="about">Generating functions, graphs and games, on top of the <a href="#discrete">counting and enumeration already built</a>.</p>
           </div>
           <ul class="topics">
-            <li><span>Counting and enumeration</span></li>
             <li><span>Generating functions and recurrences</span></li>
             <li><span>Graphs: paths, trees, matchings, flows, colouring</span></li>
             <li><span>Exact linear programming</span></li>
@@ -513,16 +546,15 @@ R`<span class="n">1.2[3:6]</span>`         <span class="c">// 1.23 to 1.26</span
             <li><span>Field towers, radicals and constructibility</span></li>
           </ul>
         </article>
-        <article class="pkg" id="logic">
+        <article class="pkg" id="logic-planned">
           <div>
-            <h3>Logic<span class="status status-plan">Planned</span></h3>
+            <h3>Logic, continued<span class="status status-plan">Planned</span></h3>
             <span class="id">@ratmath/logic</span>
-            <p class="about">Formal logic you can compute with: valid with a proof, invalid with a countermodel, or unresolved.</p>
+            <p class="about">Beyond propositional logic, on top of the <a href="#logic">formulas and proof systems already built</a>.</p>
           </div>
           <ul class="topics">
-            <li><span>Propositional logic and normal forms</span></li>
-            <li><span>Proof checkers with hints</span></li>
             <li><span>Predicate logic and finite models</span></li>
+            <li><span>Circuits, Karnaugh maps and syllogisms</span></li>
             <li><span>Modal logic</span></li>
             <li><span>Ordinals and cardinals</span></li>
             <li><span>Automata and Turing machines</span></li>

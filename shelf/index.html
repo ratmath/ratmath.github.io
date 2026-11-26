@@ -449,7 +449,7 @@ R`<span class="n">1.2[3:6]</span>`         <span class="c">// 1.23 to 1.26</span
           <div>
             <h3>Discrete mathematics<span class="status status-done">First parts available</span></h3>
             <span class="id">@ratmath/discrete</span>
-            <p class="about">Combinatorics, graphs and games. Built so far: exact counting, families of objects you can list, rank and unrank, a seeded random generator, graphs with exact weights (connectivity, shortest paths, tours and trees), and exact linear programming with matrix and bimatrix games, each answer with its certificate. Generating functions, matchings, flows and more games are <a href="#discrete-planned">planned</a>.</p>
+            <p class="about">Combinatorics, graphs and games. Built so far: exact counting, families of objects you can list, rank and unrank, a seeded random generator, graphs with exact weights (connectivity, shortest paths, tours and trees), exact linear programming with matrix and bimatrix games, generating functions and recurrences with exact closed forms, matchings and flows, colouring, planarity, isomorphism and spectra, combinatorial and cooperative games and voting, relations, orders and Pólya counting, and error-correcting codes and designs, each answer with its certificate. Graph drawing is <a href="#discrete-planned">planned</a>.</p>
             <p class="links"><a href="https://ratmath.com/discrete/">Overview</a> <a href="https://ratmath.com/discrete/explore.html">Explore</a> <a href="https://ratmath.com/discrete/reference.html">Reference</a> <a href="https://github.com/ratmath/discrete">Source</a></p>
           </div>
           <ul class="topics">
@@ -466,6 +466,18 @@ R`<span class="n">1.2[3:6]</span>`         <span class="c">// 1.23 to 1.26</span
             <li><a href="https://ratmath.com/discrete/integer-programs.html">Integer programs</a><span>Branch and bound on exact relaxations.</span></li>
             <li><a href="https://ratmath.com/discrete/matrix-games.html">Matrix games</a><span>Zero-sum games: optimal mixed strategies and the value as fractions.</span></li>
             <li><a href="https://ratmath.com/discrete/bimatrix-games.html">Bimatrix games</a><span>Dominance, every Nash equilibrium, Lemke–Howson.</span></li>
+            <li><a href="https://ratmath.com/discrete/generating-functions.html">Generating functions</a><span>Exact power series: products, reciprocals, composition, exp and log, EGFs.</span></li>
+            <li><a href="https://ratmath.com/discrete/recurrences.html">Recurrences</a><span>Closed forms with exact algebraic roots, guessing a recurrence, closed sums, the master theorem.</span></li>
+            <li><a href="https://ratmath.com/discrete/matchings-flows.html">Matchings and flows</a><span>Blossoms with a Tutte–Berge proof, König and Hall, assignment, stable matching, max flow and min cut.</span></li>
+            <li><a href="https://ratmath.com/discrete/colouring.html">Colouring and cliques</a><span>The chromatic number with the reason no fewer colours work; the chromatic polynomial.</span></li>
+            <li><a href="https://ratmath.com/discrete/planarity.html">Planarity</a><span>Faces for a planar graph, a Kuratowski subdivision for one that is not.</span></li>
+            <li><a href="https://ratmath.com/discrete/isomorphism-spectra.html">Isomorphism and spectra</a><span>Colour refinement, automorphism groups, exact eigenvalues, walks and spanning trees.</span></li>
+            <li><a href="https://ratmath.com/discrete/combinatorial-games.html">Combinatorial games</a><span>Sprague–Grundy, nim, Conway's numbers, nimbers and up, backward induction.</span></li>
+            <li><a href="https://ratmath.com/discrete/cooperative-voting.html">Cooperative games and voting</a><span>Shapley values, the core or a proof it is empty, voting power, voting methods, apportionment.</span></li>
+            <li><a href="https://ratmath.com/discrete/relations-orders.html">Relations and orders</a><span>Properties with counterexamples, Dilworth, linear extensions, Möbius functions, lattices.</span></li>
+            <li><a href="https://ratmath.com/discrete/polya.html">Pólya counting</a><span>Colourings up to symmetry: Burnside's lemma and the cycle index.</span></li>
+            <li><a href="https://ratmath.com/discrete/codes.html">Error-correcting codes</a><span>Linear codes with syndrome decoding in steps, Hamming codes, bounds, Reed–Solomon.</span></li>
+            <li><a href="https://ratmath.com/discrete/designs.html">Latin squares and designs</a><span>Orthogonal Latin squares, block designs, finite planes, Steiner triple systems.</span></li>
           </ul>
         </article>
         <article class="pkg" id="numtheory">
@@ -643,14 +655,10 @@ R`<span class="n">1.2[3:6]</span>`         <span class="c">// 1.23 to 1.26</span
           <div>
             <h3>Discrete mathematics, continued<span class="status status-plan">Planned</span></h3>
             <span class="id">@ratmath/discrete</span>
-            <p class="about">Generating functions, more graph theory and more games, on top of the <a href="#discrete">counting, enumeration, graphs, linear programming and matrix games already built</a>.</p>
+            <p class="about">Graph drawing (in graphics), on top of the <a href="#discrete">counting, graphs, graph theory, generating functions, games, orders, codes and designs already built</a>.</p>
           </div>
           <ul class="topics">
-            <li><span>Generating functions and recurrences</span></li>
-            <li><span>Graphs: matchings, flows, colouring, planarity, isomorphism</span></li>
-            <li><span>Combinatorial, extensive-form and cooperative games; voting</span></li>
-            <li><span>Relations and partial orders</span></li>
-            <li><span>Codes and designs</span></li>
+            <li><span>Graph drawing: force-directed, layered and planar layouts</span></li>
           </ul>
         </article>
         <article class="pkg" id="numtheory-planned">

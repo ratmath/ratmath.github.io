@@ -533,7 +533,7 @@ R`<span class="n">1.2[3:6]</span>`         <span class="c">// 1.23 to 1.26</span
           <div>
             <h3>Statistics<span class="status status-done">First parts available</span></h3>
             <span class="id">@ratmath/stats</span>
-            <p class="about">Probability and statistics with every answer labelled exact, certified or simulated. Built so far: finite probability, distributions, descriptive statistics, exact tests, data generated from a known model with noise to test what a procedure recovers, the standard tests and intervals, and regression and analysis of variance with exact coefficients. Rank tests, the bootstrap, Markov chains and Bayesian updating are <a href="#stats-planned">planned</a>.</p>
+            <p class="about">Probability and statistics with every answer labelled exact, certified or simulated. Built so far: finite probability, distributions, descriptive statistics, exact tests, data generated from a known model with noise to test what a procedure recovers, the standard tests and intervals, and regression and analysis of variance with exact coefficients, rank tests with exact null laws, the Kolmogorov–Smirnov test, the bootstrap, Markov chains and conjugate Bayesian updating. Plots of these are <a href="#stats-planned">planned</a> in graphics.</p>
             <p class="links"><a href="https://ratmath.com/stats/">Overview</a> <a href="https://ratmath.com/stats/explore.html">Explore</a> <a href="https://ratmath.com/stats/reference.html">Reference</a> <a href="https://github.com/ratmath/stats">Source</a></p>
           </div>
           <ul class="topics">
@@ -553,6 +553,11 @@ R`<span class="n">1.2[3:6]</span>`         <span class="c">// 1.23 to 1.26</span
             <li><a href="https://ratmath.com/stats/testing-the-tests.html">Testing the tests</a><span>Seeded experiments check that intervals cover and tests keep their size.</span></li>
             <li><a href="https://ratmath.com/stats/regression.html">Linear regression</a><span>Exact least squares, prediction intervals, leverage and nested models.</span></li>
             <li><a href="https://ratmath.com/stats/anova.html">Analysis of variance</a><span>Exact sums of squares, as a regression on indicators, and two factors.</span></li>
+            <li><a href="https://ratmath.com/stats/rank-tests.html">Rank tests</a><span>Sign, Wilcoxon, Mann–Whitney, Kruskal–Wallis, Spearman and Kendall, with exact null laws.</span></li>
+            <li><a href="https://ratmath.com/stats/kolmogorov-smirnov.html">Kolmogorov–Smirnov</a><span>One and two samples, with certified p-values from the exact law.</span></li>
+            <li><a href="https://ratmath.com/stats/bootstrap.html">The bootstrap</a><span>Every resample enumerated exactly when small, seeded otherwise.</span></li>
+            <li><a href="https://ratmath.com/stats/markov-chains.html">Markov chains</a><span>Classes, stationary laws, absorption and hitting times, all as fractions.</span></li>
+            <li><a href="https://ratmath.com/stats/bayesian-updating.html">Bayesian updating</a><span>Beta, gamma, normal and Dirichlet priors updated exactly.</span></li>
           </ul>
         </article>
         <article class="pkg" id="chaos">
@@ -644,11 +649,10 @@ R`<span class="n">1.2[3:6]</span>`         <span class="c">// 1.23 to 1.26</span
           <div>
             <h3>Statistics, continued<span class="status status-plan">Planned</span></h3>
             <span class="id">@ratmath/stats</span>
-            <p class="about">Resampling, rank methods and Bayesian ideas, on top of the <a href="#stats">distributions, tests and regression already built</a>.</p>
+            <p class="about">Pictures (in graphics), on top of the <a href="#stats">distributions, tests, regression, rank methods, chains and Bayesian updating already built</a>.</p>
           </div>
           <ul class="topics">
-            <li><span>Rank tests and the bootstrap</span></li>
-            <li><span>Markov chains and Bayesian updating</span></li>
+            <li><span>Histograms, densities and Q–Q plots, drawn by graphics</span></li>
           </ul>
         </article>
         <article class="pkg" id="discrete-planned">

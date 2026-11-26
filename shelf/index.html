@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>RatMath Shelf</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="The RatMath Shelf: subject libraries for JavaScript built on RatMath Core. Calculus, algebra, linear algebra and graphics today, with exact or certified answers; what each can do and what is planned.">
+<meta name="description" content="The RatMath Shelf: subject libraries for JavaScript built on RatMath Core. Calculus, algebra, linear algebra, graphics, symbolic algebra and complex numbers today, with exact or certified answers; what each can do and what is planned.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23173a4a'/%3E%3Ctext x='16' y='14' font-family='Georgia,serif' font-size='12' fill='%23f1b24a' text-anchor='middle'%3Ep%3C/text%3E%3Crect x='8' y='16.5' width='16' height='1.6' fill='%23f1b24a'/%3E%3Ctext x='16' y='28' font-family='Georgia,serif' font-size='12' fill='%23f1b24a' text-anchor='middle'%3Eq%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -386,6 +386,39 @@ R`<span class="n">1.2[3:6]</span>`         <span class="c">// 1.23 to 1.26</span
             <li><a href="https://ratmath.com/structures/symmetric.html">Symmetric polynomials</a><span>Elementary symmetric polynomials and Newton's identities.</span></li>
           </ul>
         </article>
+        <article class="pkg" id="symbolic">
+          <div>
+            <h3>Symbolic algebra<span class="status status-done">First part available</span></h3>
+            <span class="id">@ratmath/symbolic</span>
+            <p class="about">Algebra on expressions, with every step checked by the certified libraries. Built so far: expressions, assumptions, rewriting and equality. Solving, antiderivatives and steps are <a href="#symbolic-planned">planned</a>.</p>
+            <p class="links"><a href="https://ratmath.com/symbolic/">Overview</a> <a href="https://ratmath.com/symbolic/explore.html">Explore</a> <a href="https://ratmath.com/symbolic/reference.html">Reference</a> <a href="https://github.com/ratmath/symbolic">Source</a></p>
+          </div>
+          <ul class="topics">
+            <li><a href="https://ratmath.com/symbolic/expressions.html">Expressions</a><span>The shared tree: writing, substituting, differentiating, evaluating.</span></li>
+            <li><a href="https://ratmath.com/symbolic/assumptions.html">Assumptions</a><span>Say what the letters stand for, and prove signs from it.</span></li>
+            <li><a href="https://ratmath.com/symbolic/normal-forms.html">Normal forms</a><span>Expand, factor, collect; roots, logs and sines reduced exactly.</span></li>
+            <li><a href="https://ratmath.com/symbolic/rules.html">Rules</a><span>Rewriting rules that carry their conditions and are checked when used.</span></li>
+            <li><a href="https://ratmath.com/symbolic/equality.html">Equality</a><span>Proven equal, proven different, or undecided.</span></li>
+          </ul>
+        </article>
+        <article class="pkg" id="complex">
+          <div>
+            <h3>Complex<span class="status status-done">First parts available</span></h3>
+            <span class="id">@ratmath/complex</span>
+            <p class="about">Complex numbers that say which branch they took, with quaternions and octonions. Built so far: exact complex numbers, certified functions with branch reporting, and the Cayley–Dickson numbers. Complex analysis is <a href="#complex-planned">planned</a>.</p>
+            <p class="links"><a href="https://ratmath.com/complex/">Overview</a> <a href="https://ratmath.com/complex/explore.html">Explore</a> <a href="https://ratmath.com/complex/reference.html">Reference</a> <a href="https://github.com/ratmath/complex">Source</a></p>
+          </div>
+          <ul class="topics">
+            <li><a href="https://ratmath.com/complex/numbers.html">Complex rationals</a><span>Exact a + bi with fractions; exact square roots.</span></li>
+            <li><a href="https://ratmath.com/complex/enclosures.html">Rectangles and discs</a><span>Certified enclosures of numbers that are not rational.</span></li>
+            <li><a href="https://ratmath.com/complex/polar.html">Polar form</a><span>Modulus and angle, and what is exact about them.</span></li>
+            <li><a href="https://ratmath.com/complex/functions.html">Functions</a><span>exp, sine, cosine and the hyperbolic functions at any precision.</span></li>
+            <li><a href="https://ratmath.com/complex/branches.html">Branches</a><span>Logarithms, roots and inverses that report their cuts.</span></li>
+            <li><a href="https://ratmath.com/complex/cayley-dickson.html">Cayley–Dickson numbers</a><span>Quaternions, octonions, sedenions, and what each loses.</span></li>
+            <li><a href="https://ratmath.com/complex/rotations.html">Rotations</a><span>Quaternions as exact rotations of space.</span></li>
+            <li><a href="https://ratmath.com/complex/integer-quaternions.html">Integer quaternions</a><span>Division with remainder and sums of four squares.</span></li>
+          </ul>
+        </article>
     </section>
 
     <section class="block planned" id="planned">
@@ -393,33 +426,30 @@ R`<span class="n">1.2[3:6]</span>`         <span class="c">// 1.23 to 1.26</span
         <h2>Planned</h2>
         <p>Not built yet. The full plan, with scope and order, is in the <a href="https://github.com/ratmath/ratmath/blob/main/docs/design/library-roadmap.md" style="color:var(--ink);font-weight:600;text-decoration-color:var(--ochre);text-underline-offset:3px">library roadmap</a>.</p>
       </div>
-        <article class="pkg" id="symbolic">
+        <article class="pkg" id="symbolic-planned">
           <div>
-            <h3>Symbolic algebra<span class="status status-plan">Planned</span></h3>
+            <h3>Symbolic algebra, continued<span class="status status-plan">Planned</span></h3>
             <span class="id">@ratmath/symbolic</span>
-            <p class="about">Rewriting, solving and closed forms, with every step checked by the certified libraries.</p>
+            <p class="about">Solving and closed forms, on top of the <a href="#symbolic">expressions and equality already built</a>.</p>
           </div>
           <ul class="topics">
-            <li><span>Simplifying, expanding and factoring expressions</span></li>
-            <li><span>Equality as proven equal, proven different or undecided</span></li>
             <li><span>Solving equations and inequalities</span></li>
             <li><span>Antiderivatives, limits and expansions in closed form</span></li>
+            <li><span>Systems, trigonometric families and sums</span></li>
             <li><span>Steps for every operation</span></li>
           </ul>
         </article>
-        <article class="pkg" id="complex">
+        <article class="pkg" id="complex-planned">
           <div>
-            <h3>Complex<span class="status status-plan">Planned</span></h3>
+            <h3>Complex, continued<span class="status status-plan">Planned</span></h3>
             <span class="id">@ratmath/complex</span>
-            <p class="about">Complex numbers and complex analysis, with quaternions and octonions.</p>
+            <p class="about">Complex analysis with proofs, on top of the <a href="#complex">numbers and functions already built</a>.</p>
           </div>
           <ul class="topics">
-            <li><span>Exact complex numbers, discs and rectangles</span></li>
-            <li><span>Elementary functions with honest branches</span></li>
-            <li><span>Quaternions, octonions and the Cayley–Dickson numbers</span></li>
             <li><span>Contour integrals and the argument principle</span></li>
             <li><span>Residues and Laurent series</span></li>
             <li><span>Möbius and conformal maps</span></li>
+            <li><span>The complex gamma and zeta functions</span></li>
           </ul>
         </article>
         <article class="pkg" id="stats">
